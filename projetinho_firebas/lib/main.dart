@@ -66,10 +66,21 @@ class _MyHomePageState extends State<MyHomePage> {
         return ListView(
           children: snapshot.data!.docs.map((DocumentSnapshot document) {
             Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
-            return ListTile(
+            return  Container(
+              color: Colors.yellow[600],
+            child:  Card(
+              
+       child: ListTile(
               title: Text(data['nome'].toString()),
               subtitle: Text(data['telefone'].toString()),
+              trailing: Icon(Icons.more_vert),
+              onTap: () {
+                print(data['nome']);
+              },
+            ),
+    ),
             );
+            
           }).toList(),  
         ); 
       } 
