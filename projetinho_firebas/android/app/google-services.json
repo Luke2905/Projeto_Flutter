@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "486081572508",
+    "project_id": "projetinhofirebase-58e09",
+    "storage_bucket": "projetinhofirebase-58e09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486081572508:android:9a923ff7ca51ab5f080759",
+        "android_client_info": {
+          "package_name": "com.example.projetinho_firebas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486081572508-jo74hqp78iokpjsohl1hfbjjlqauuriq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoyt60XqE4ybsEesCglpX3dip4CyYop3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486081572508-jo74hqp78iokpjsohl1hfbjjlqauuriq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "486081572508-ugpr6admdp83vvnmjtmro2bf5magmrdv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.projetinhoFirebas"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
