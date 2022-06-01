@@ -78,6 +78,9 @@ body: SingleChildScrollView(
                             builder: (context) => MyApp()));
                       }else{
                          FirebaseFirestore.instance.collection('Etec').add({'nome': nome,'telefone': telefone});
+                         
+                         Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (context) => MyApp()));
                       }
           },
         ),
