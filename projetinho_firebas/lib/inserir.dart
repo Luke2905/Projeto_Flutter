@@ -80,7 +80,7 @@ body: SingleChildScrollView(
                          FirebaseFirestore.instance.collection('Agenda').add({'nome': nome,'data': data});
                          
                          Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => MyApp()));
+                        builder: (context) => Inserir()));
                       }
           },
         ),

@@ -27,17 +27,17 @@ class Menu extends StatelessWidget {
             ),
              menuItem(
               nome: "Agendamentos",
-              icone: Icons.home,
+              icone: Icons.calendar_month,
               tocar: () => selecaoItem(context, 1),
             ),
             menuItem(
               nome: "Inserir",
-              icone: Icons.home,
+              icone: Icons.add,
               tocar: () => selecaoItem(context, 0),
             ),
              menuItem(
               nome: "Deletar",
-              icone: Icons.home,
+              icone: Icons.delete,
               tocar: () => selecaoItem(context, 2),
             ),
           ],
