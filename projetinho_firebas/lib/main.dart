@@ -77,10 +77,8 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 print(data['nome']);
               },
-            ),
-    ),
-            );
-            
+            ),),
+            ); 
           }).toList(),  
         ); 
       } 
