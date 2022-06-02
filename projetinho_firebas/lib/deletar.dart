@@ -44,7 +44,7 @@ body: SingleChildScrollView(
           backgroundColor: Colors.purple[800],
           child: Icon(Icons.delete),
           onPressed: () {
-                       FirebaseFirestore.instance.collection('Etec').get().then((snapshot) {
+                       FirebaseFirestore.instance.collection('Agenda').get().then((snapshot) {
                 for (DocumentSnapshot ds in snapshot.docs){
     ds.reference.delete();
              }

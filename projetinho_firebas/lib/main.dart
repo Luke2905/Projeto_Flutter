@@ -38,7 +38,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   final Stream<QuerySnapshot> usersStream = 
-        FirebaseFirestore.instance.collection("Etec").snapshots(); /*objeto para gerar a conexão com o banco Firebase dentro do usersStream */
+        FirebaseFirestore.instance.collection("Agenda").snapshots(); /*objeto para gerar a conexão com o banco Firebase dentro do usersStream */
 
   @override
   Widget build(BuildContext context) {

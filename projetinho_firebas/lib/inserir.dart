@@ -77,7 +77,7 @@ body: SingleChildScrollView(
                         Navigator.of(context).pushReplacement(MaterialPageRoute(
                             builder: (context) => MyApp()));
                       }else{
-                         FirebaseFirestore.instance.collection('Etec').add({'nome': nome,'data': data});
+                         FirebaseFirestore.instance.collection('Agenda').add({'nome': nome,'data': data});
                          
                          Navigator.of(context).pushReplacement(MaterialPageRoute(
                         builder: (context) => MyApp()));
