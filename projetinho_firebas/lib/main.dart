@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home: const MyHomePage(title: 'Dados'),
+      home: const MyHomePage(title: 'Agendamentos'),
     );
   }
 }
@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
               
        child: ListTile(
               title: Text(data['nome'].toString()),
-              subtitle: Text(data['telefone'].toString()),
+              subtitle: Text(data['data'].toString()),
               trailing: Icon(Icons.more_vert),
               onTap: () {
                 print(data['nome']);

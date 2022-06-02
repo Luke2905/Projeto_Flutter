@@ -22,7 +22,7 @@ class Inserir extends StatelessWidget {
 class AddData extends StatelessWidget {
 
   String nome='';
-  String telefone='';
+  String data='';
 
   @override
   Widget build(BuildContext context) {
@@ -57,11 +57,11 @@ body: SingleChildScrollView(
 
                 TextField(
                   onChanged: (text){ 
-                   telefone = text;
+                   data = text;
                   },
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    labelText: 'telefone',
+                    labelText: 'data',
                     border: OutlineInputBorder(),
                   ),
                 ),
@@ -73,11 +73,11 @@ body: SingleChildScrollView(
           child: Icon(Icons.add),
           onPressed: () {
             if(nome.isEmpty
-                  || telefone.isEmpty){
+                  || data.isEmpty){
                         Navigator.of(context).pushReplacement(MaterialPageRoute(
                             builder: (context) => MyApp()));
                       }else{
-                         FirebaseFirestore.instance.collection('Etec').add({'nome': nome,'telefone': telefone});
+                         FirebaseFirestore.instance.collection('Etec').add({'nome': nome,'data': data});
                          
                          Navigator.of(context).pushReplacement(MaterialPageRoute(
                         builder: (context) => MyApp()));

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:projetinho_firebas/firebase_options.dart';
 import 'package:projetinho_firebas/inserir.dart';
+import 'package:projetinho_firebas/deletar.dart';
 import 'package:projetinho_firebas/main.dart';
 
 class Menu extends StatelessWidget {
@@ -24,15 +25,20 @@ class Menu extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
+             menuItem(
+              nome: "Agendamentos",
+              icone: Icons.home,
+              tocar: () => selecaoItem(context, 1),
+            ),
             menuItem(
               nome: "Inserir",
               icone: Icons.home,
               tocar: () => selecaoItem(context, 0),
             ),
-              menuItem(
-              nome: "Dados",
+             menuItem(
+              nome: "Deletar",
               icone: Icons.home,
-              tocar: () => selecaoItem(context, 1),
+              tocar: () => selecaoItem(context, 2),
             ),
           ],
         ),
@@ -97,6 +103,10 @@ selecaoItem(BuildContext context, int i) {
           case 1:
         Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => MyApp()));
+        break;
+              case 2:
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => Deletar()));
         break;
     }
 }
