@@ -1,16 +1,13 @@
-# projetinho_firebas
+# Relatório de Agendamentos
 
-A new Flutter project.
+Aplicativo de relatórios de agendamentos
 
-## Getting Started
+## Equipe
 
-This project is a starting point for a Flutter application.
+- EMANUEL SOUZA SOBRAL 
+- HISLLAYLLA KÉZIA RAIMUNDO DA SILVA
+- KAIO RENAN SANTOS SENA 
+- LUCAS DE BARROS LARANJEIRA SILVA 
+- RENATA MACIEL GUILHERME 
+- WAGNER NAILSON DOS SANTOS ARAÚJO 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
