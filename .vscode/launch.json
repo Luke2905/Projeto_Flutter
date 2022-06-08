@@ -1,0 +1,35 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "projetinho_firebas",
+            "cwd": "projetinho_firebas",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "projetinho_firebas (profile mode)",
+            "cwd": "projetinho_firebas",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "projetinho_firebas (release mode)",
+            "cwd": "projetinho_firebas",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
