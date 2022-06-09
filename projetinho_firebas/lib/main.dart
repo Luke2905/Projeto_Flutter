@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false, 
-      title: 'K Agenda',
+      title: 'King Agendamentos',
       theme: ThemeData(
-        primarySwatch: Colors.grey,
+        primarySwatch: Colors.purple,
       ),
       home: const MyHomePage(title: 'Agendamentos'),
     );
@@ -39,6 +39,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
   final Stream<QuerySnapshot> usersStream = 
         FirebaseFirestore.instance.collection("Agenda").snapshots(); /*objeto para gerar a conexão com o banco Firebase dentro do usersStream */
+
+  TimeOfDay _time = TimeOfDay.now();
+    TimeOfDay picked;
+    
+    Future<Null> selectTime(BuildContext context) async {
+      picked = await showTimePicker(
+        context: context,
+        initialTime: _time,
+      );
+      setState(() {
+        _time = picked;
+    
+        print(picked);
+      });
+    }
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +84,31 @@ class _MyHomePageState extends State<MyHomePage> {
             return  Container(
               color: Colors.yellow[600],
             child:  Card(
-              
+
+        return ListView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              IconButton(
+                iconSize: 80,
+                icon: Icon(
+                  Icons.alarm,
+                  size: 80,
+                ),
+                onPressed: () {
+                  selectTime(context);
+                },
+              ),
+              SizedBox(
+                height: 60,
+              ),
+              Text('$_time', style: TextStyle(fontSize: 40)),
+            ],
+          ), 
+      ); 
+    }
+  }
+
        child: ListTile(
               title: Text(data['nome'].toString()),
               subtitle: Text(data['data'].toString()),
