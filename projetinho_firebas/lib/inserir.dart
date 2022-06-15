@@ -48,26 +48,12 @@ body: SingleChildScrollView(
                   },
                   keyboardType: TextInputType.text, 
                   decoration: InputDecoration(
-                    labelText: 'Nome',
+                    labelText: 'nome',
                     border: OutlineInputBorder(),
                   ),
                 ),
 
-                const SizedBox(height: 10.0),
-                  TimeOfDay _time = TimeOfDay.now();
-                    TimeOfDay picked;
-                    
-                    Future<Null> selectTime(BuildContext context) async {
-                      picked = await showTimePicker(
-                        context: context,
-                        initialTime: _time,
-                      );
-                      setState(() {
-                        _time = picked;
-                    
-                        print(picked);
-                      });
-                    }
+                const SizedBox(height: 10,),
 
                 TextField(
                   onChanged: (text){ 
@@ -75,12 +61,10 @@ body: SingleChildScrollView(
                   },
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    labelText: 'Data',
+                    labelText: 'data',
                     border: OutlineInputBorder(),
                   ),
                 ),
-
-                const SizedBox(10.0)
 
                  const SizedBox(height: 10.0),
 
